@@ -37,10 +37,10 @@ export default {
   data() {
     
     return {
-      //title: "home",            
+                
       admin: "",
       password: "",
-      tokenAuth: ""
+      
     };
   },
 
@@ -64,7 +64,7 @@ export default {
           .post("https://otthoni-feladat-backend.herokuapp.com/login", login)
           .then((response) => {
             const token = response.data.token;
-            //this.tokenAuth = token;
+            
             console.log(token);
             window.location.href = 'Data/';  // Átirányítás a Data-ra
             localStorage.token = token;
