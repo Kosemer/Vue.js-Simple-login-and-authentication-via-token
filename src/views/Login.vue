@@ -20,9 +20,6 @@
       />
       <div id="pass_error">Please fill up your Password</div>
       <button type="button" @click="loginAction()">Login</button>
-      <!--<router-link :to="'About/' + this.admin">
-      <i class="as">HELLO</i>
-      </router-link>-->
     </form>
   </div>
 </template>
